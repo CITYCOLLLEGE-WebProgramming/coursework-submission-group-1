@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #2ebf91;
+    --secondary-color: #f9f9f9;
+    --text-color: #24355a;
+    --light-text-color: #969393;
+    --border-color: #ddd;
+  }
+  
+  .listing-details {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .listing-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .listing-description {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .listing-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .listing-info p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .listing-info p strong {
+    color: var(--light-text-color);
+  }
+  
+  .listing-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1.5rem;
+  }
+  
+  .listing-photos img {
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .i-want-it-button {
+    align-self: flex-end;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .i-want-it-button:hover {
+    background-color: #27a07b;
+  }
+  
+  @media (min-width: 768px) {
+    .listing-details {
+      max-width: 80%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .listing-info, .listing-description {
+      flex: 1 1 100%;
+    }
+  
+    .listing-photos {
+      flex: 1 1 100%;
+    }
+  
+    .i-want-it-button {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .listing-details {
+      max-width: 70%;
+    }
+  }
+  

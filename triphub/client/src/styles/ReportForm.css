@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #2ebf91;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .report {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  
+  .report_content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .report_content h2 {
+    color: #2ebf91;
+    margin-bottom: 1rem;
+  }
+  
+  .report_content_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .report_content_form input,
+  .report_content_form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+  }
+  
+  .report_content_form input:focus,
+  .report_content_form textarea:focus {
+    border-color: #2ebf91;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 191, 145, 0.5);
+  }
+  
+  .report_button {
+    background: #2ebf91;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .report_button:hover {
+    background: #249e7c;
+  }
+  

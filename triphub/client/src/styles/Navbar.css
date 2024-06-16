@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); 
+
+:root {
+  --pinkred: #F8395A;
+  --blue: #24355A;
+  --lightgrey: #F7F8F8;
+  --grey: #bdb9b9;
+  --darkgrey: #969393;
+  --green: #2ebf91; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_logo {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: var(--green); 
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.navbar_search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; 
+  margin: 0 2rem;
+}
+
+.navbar_search input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_right_account {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar_right_accountmenu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_right_accountmenu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar_right_accountmenu a:hover {
+  background: #f0f0f0;
+}
+
+.report_problem {
+  margin-right: 1rem;
+  color: var(--pinkred); 
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.report_problem:hover {
+  text-decoration: underline;
+}
+
+.profile_photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
+
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+  height: 60em;
+  object-fit: cover; 
+}
+
+.slide-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.slide-content h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.slide-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.view-all-rooms,
+.become-host {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #2ebf91; 
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 150px; 
+  height: 70px; 
+  text-decoration: none;
+}
+
+.view-all-rooms:hover,
+.become-host:hover {
+  background: #249e7c;
+}
